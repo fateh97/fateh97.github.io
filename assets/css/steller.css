@@ -11077,7 +11077,7 @@ pre {
 }
 
 .img-wrapper .overlay {
-  background: rgba(255, 122, 87, 0.7);
+  background: rgba(255, 122, 87, 1);
   position: absolute;
   left: 0;
   bottom: 100%;
@@ -11106,6 +11106,7 @@ pre {
 
 .img-wrapper .overlay .overlay-infos h5 {
   margin-bottom: 15px;
+  text-align:center;
 }
 
 .img-wrapper .overlay .overlay-infos a {
@@ -11128,7 +11129,7 @@ pre {
 .img-wrapper:hover .overlay, .img-wrapper:active .overlay {
   bottom: 0;
   visibility: visible;
-  opacity: 0;
+  opacity: 1;
 }
 
 .img-wrapper:hover .overlay .overlay-infos, .img-wrapper:active .overlay .overlay-infos {
