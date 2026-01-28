@@ -1,314 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Welcome to my portfolio! Explore and discover my work">
-    <meta name="author" content="Devcrud">
-    <link rel="icon" type="image/ico" href="assets/imgs/logo.svg">
-    <title>Abdul Hadi Portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="assets/css/steller.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdul Hadi Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body class="bg-gray-100 text-gray-800">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Skills</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cert">Certifications</a>
-                    </li>                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>          
-    </nav>
-    <!-- End of page navibation -->
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <img src="assets/imgs/logo.svg" class="h-8" />
 
-    <!-- Page Header -->
-    <header class="header" id="home">
-        <div class="container">
-            <div class="infos">
-                <h5 class="subtitle">Hello, I'm</h5>
-                <h5 class="title">Abdul Hadi</h5>
-                <p>Web Developer</p>     
+    <div class="hidden md:flex space-x-6 font-medium">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#cert" class="hover:text-blue-600">Certifications</a>
+      <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+    </div>
+  </div>
+</nav>
 
-                <div class="socials mt-4">
-                    <a class="social-item" href="https://www.linkedin.com/in/hadimuzaffar/"><i class="ti-linkedin"></i></a>
-                    <a class="social-item" href="https://github.com/fateh97"><i class="ti-github"></i></a>
-                    <a class="social-item" href="https://twitter.com/abdulhadi8"><i class="ti-twitter"></i></a>
-                    <a class="social-item" href="https://www.instagram.com/abdulhadi7/"><i class="ti-instagram"></i></a>
-                </div>
-            </div>              
-            <div class="img-holder">
-                <img src="assets/imgs/man.svg" alt="">
-            </div>      
-        </div>  
+<!-- ================= HERO ================= -->
+<section id="home" class="pt-32 pb-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
 
-        <!-- Header-widget -->
-        <div class="widget">
-            <div class="widget-item">
-                <h2>4</h2>
-                <p>Project (Client) Ongoing</p>
-            </div>
-            <div class="widget-item">
-                <h2>1</h2>
-                <p>Project (Client) Completed</p>
-            </div>
-            <div class="widget-item">
-                <h2>1</h2>
-                <p>Project (In-house) Completed</p>
-            </div>
+    <div class="text-center md:text-left">
+      <h1 class="text-4xl font-bold mb-2">Hello, I'm</h1>
+      <h2 class="text-5xl font-extrabold text-blue-600 mb-4">Abdul Hadi</h2>
+      <p class="text-xl mb-6">Web Developer</p>
+
+      <div class="flex justify-center md:justify-start space-x-4 text-xl">
+        <a href="https://linkedin.com" class="hover:text-blue-600"><i class="ti-linkedin"></i></a>
+        <a href="https://github.com/fateh97" class="hover:text-blue-600"><i class="ti-github"></i></a>
+        <a href="https://twitter.com" class="hover:text-blue-600"><i class="ti-twitter"></i></a>
+        <a href="https://instagram.com" class="hover:text-blue-600"><i class="ti-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="hidden md:block">
+      <img src="assets/imgs/man.svg" class="w-full">
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-3xl font-bold">4</h3>
+      <p>Client Ongoing</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-3xl font-bold">1</h3>
+      <p>Client Completed</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <h3 class="text-3xl font-bold">1</h3>
+      <p>In-house Completed</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
+
+    <div class="md:col-span-3">
+      <img src="assets/imgs/hadi2.jpg" class="rounded-xl shadow">
+    </div>
+
+    <div class="md:col-span-9">
+      <h2 class="text-3xl font-bold mb-2">Abdul Hadi Muzaffar</h2>
+      <p class="text-blue-600 mb-4">Web Developer</p>
+
+      <p class="text-gray-700 leading-relaxed text-justify mb-4">
+        I am a Web Developer with experience in Web Design, Development, Deployment, and Cyber Forensic...
+      </p>
+
+      <a href="assets/files/CV - Abdul Hadi Muzaffar Naratius.pdf"
+         class="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        Download CV
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+        <i class="ti-desktop text-3xl mb-4"></i>
+        <h3 class="font-semibold">Front-End</h3>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+        <i class="ti-server text-3xl mb-4"></i>
+        <h3 class="font-semibold">Back-End</h3>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+        <i class="ti-database text-3xl mb-4"></i>
+        <h3 class="font-semibold">Database</h3>
+      </div>
+      <div class="p-6 bg-gray-100 rounded-xl shadow hover:shadow-lg transition">
+        <i class="ti-search text-3xl mb-4"></i>
+        <h3 class="font-semibold">Cyber Forensic</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERT ================= -->
+<section id="cert" class="py-20">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-10">Certifications</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 border rounded-xl">Microsoft Azure Data Scientist</div>
+      <div class="p-6 border rounded-xl">AWS Solutions Architect</div>
+      <div class="p-6 border rounded-xl">VA Insight Seminar</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-10">Portfolio</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group relative overflow-hidden rounded-xl shadow">
+        <img src="assets/imgs/cpms2.png" class="w-full h-56 object-cover group-hover:scale-110 transition">
+        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white p-4">
+          Client & Product Management
         </div>
-    </header>
-    <!-- End of Page Header -->
-    
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/hadi2.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Abdul Hadi Muzaffar</h6>
-                    <p class="subtitle">Web Developer</p>
-                    <p style="text-align: justify;">
-                        Hello, my name is Abdul Hadi Muzaffar Naratius, and I am a Web Developer with expertise in Web Design, Web Development, Project Deployment and Cyber Forensic. Throughout my 4 years experience in cyber forensic industry,  I have gained valuable insights into the intricacies of this sector. 
-                    </p>
-                    <p style="text-align: justify;">
-                        As a Web Developer,  I possess a comprehensive understanding of both front-end and back-end development. I design mockups interfaces, optimise performance and implement effective content based on user's needs.
-                    </p>
-                    <p style="text-align: justify;">
-                        In addition to my technical skills, I have a background in Cyber Forensic. I understand the usage of software forensic tools and how beneficial they are in this industry that I am in.
-                        Throughout my knowledge and experience in this field, I can design and develop strategies that can enhance user experience in related field and maximize the online presence of the industry.
-                    </p>
-                    <p style="text-align: justify;">
-                        My 4 years of experience in cyber forensic industry have provided me with a deep understanding of its unique challenges and requirements. I have successfully developed and deployed digital applications that streamline task and operations, manage equipments and storage, and improve client experiences. 
-                        This industry experience has prepared me with problem-solving skills and an attention to detail, which are vital in providing high-quality solutions and web applications.
-                    </p>
-                    <a type="button" class="btn btn-primary rounded mt-3" href="assets/files/CV - Abdul Hadi Muzaffar Naratius.pdf">DOWNLOAD CV</button> </a>                  
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+      <!-- Repeat for others -->
+    </div>
+  </div>
+</section>
 
-    <!-- Service section -->
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">What Do I Have</h6>
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Front-End Development</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Back-End Development</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-server"></i>
-                            <h5>Database</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-search"></i>
-                            <h5>Cyber Forensic</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
-
-     <!-- Service section -->
-     <section id="cert" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Certifications & Training</h6>
-            <h6 class="section-title mb-4">What Do I Have</h6>
-            <div class="row" style="text-align: center;">
-                <div class="col-sm-6 col-md-4 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-package"></i>
-                            <h5>Microsoft Azure Data Scientist</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-cloud"></i>
-                            <h5>AWS Certified Solutions Architect - Associate</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-blackboard"></i>
-                            <h5>VA Insight Seminar</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Works</h6>
-            <p class="mb-5 pb-4">Info that is highlighted with (*) is a P&C projects</p>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/cpms2.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Client & Product Management <br> (In-House System)</h5>
-                                <p>
-                                    Build in-house system for Prisma Khas to manage employee's task and company's products.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>     
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/mylab.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Lab Management <br> (Client System)<font color="red">*</font></h5>
-                                <p>
-                                    Build lab management system for client to ease them on lab analysis and reporting work.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>                 
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/ipaw.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Reporting Management <br> (Client System)</h5>
-                                <p>
-                                    Build reporting system for client to ease their reporting and enforcement work.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>                 
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/fems.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Lab Evidence Management <br> (Client System)<font color="red">*</font></h5>
-                                <p>
-                                    Build lab and enforcement system for client to ease and enhance their lab analysis work.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>                 
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/squirrel.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Inventory Management <br> (Client System)<font color="red">*</font></h5>
-                                <p>
-                                    Build inventory system for client to create, update, manage and monitor client's inventories.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>                 
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/cyfors.png" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Cyber Forensic <br> (Client System)<font color="red">*</font></h5>
-                                <p>
-                                    Build cyber forensic system for client to ease and enhance their forensics work and lab management.
-                                </p>
-                            </div>  
-                        </div>
-                    </div>                 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of portfolio section -->
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://fateh97.github.io/portfolio/" target="_blank">AbdulHadi</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="https://www.linkedin.com/in/hadimuzaffar/"><i class="ti-linkedin"></i></a>
-                        <a class="social-item" href="https://github.com/fateh97"><i class="ti-github"></i></a>
-                        <a class="social-item" href="https://twitter.com/abdulhadi8"><i class="ti-twitter"></i></a>
-                        <a class="social-item" href="https://www.instagram.com/abdulhadi7/"><i class="ti-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
-    <!-- End of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
+<!-- ================= FOOTER ================= -->
+<footer class="py-8 text-center text-gray-500">
+  © <script>document.write(new Date().getFullYear())</script> Abdul Hadi
+</footer>
 
 </body>
 </html>
